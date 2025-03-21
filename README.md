@@ -62,6 +62,18 @@ Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informas
 
 ---
 
+## 📁 File dalam Repository
+
+### 📌 **1. Model Terlatih**
+- **`random_forest_best.pkl`** → Model Machine Learning yang sudah dilatih menggunakan **Random Forest**.
+- Digunakan untuk **memprediksi keterlambatan pengiriman** berdasarkan data input yang telah diproses.
+
+### 📌 **2. Dataset yang Telah Diproses**
+- **`FF_processed_dataset.csv`** → Dataset hasil **preprocessing dan feature engineering**.
+- Berisi fitur-fitur yang telah diolah untuk digunakan dalam training model.
+
+---
+
 ## 📌 Cara Menjalankan Kode
 ### 1️⃣ Clone Repository
 ```bash

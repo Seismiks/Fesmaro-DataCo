@@ -22,7 +22,6 @@ Dalam industri **Supply Chain Management**, keterlambatan pengiriman dapat menye
 
 ## 📊 Dataset
 Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informasi transaksi dan logistik dengan lebih dari **180.000 transaksi**.  
-📄 **Sumber Data:** [DataCo Smart Supply Chain](https://www.kaggle.com/datasets)  
 
 **Fitur utama yang digunakan:**
 - **Tanggal Pemesanan & Pengiriman** 📅 (`order date`, `Days for shipping (real)`)
@@ -105,12 +104,6 @@ pip install -r requirements.txt
 🚀 **Tambahkan faktor eksternal** (cuaca, lalu lintas, hari libur) untuk model lebih akurat.  
 🚀 **Integrasikan model ini ke dalam dashboard** untuk mempermudah pemantauan pengiriman.  
 
----
-
-## 📞 Kontak
-Jika ada pertanyaan atau diskusi lebih lanjut, silakan hubungi kami melalui:  
-📩 **Email:** timpnjoy@fesmaro.com  
-📢 **GitHub Issues:** [Buka Tiket](https://github.com/Seismiks/Fesmaro-DataCo/issues)  
 
 ---
 
@@ -120,8 +113,3 @@ Jika ada pertanyaan atau diskusi lebih lanjut, silakan hubungi kami melalui:
 🔥 **Ayo tingkatkan efisiensi rantai pasok dengan Machine Learning!** 🚀  
 
 ---
-
-📌 **Catatan:**  
-- **Pastikan repository GitHub bersifat PUBLIC agar bisa diakses panitia.**  
-
-🚀 **README.md ini siap diunggah ke GitHub!** 🚀

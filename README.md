@@ -54,8 +54,8 @@ Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informas
 ## 📊 Hasil Evaluasi
 | Model          | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
 |---------------|----------|-----------|--------|----------|---------|
-| Random Forest | **81.49%** | 81%       | 81%    | 81%      | **0.88** |
-| XGBoost       | 71.71%   | 76%       | 74%    | 72%      | 0.78    |
+| Random Forest | **81.49%** | 81.00%       | 81.00%    | 81.00%      | **0.88** |
+| XGBoost       | 71.71%   | 76.00%       | 74.00%    | 72.00%      | 0.78    |
 
 📢 **Kesimpulan:**  
 🎯 **Random Forest adalah model terbaik** dengan akurasi **81.49%** dan AUC **0.88**.  

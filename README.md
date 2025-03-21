@@ -1,37 +1,127 @@
-# FESMARO DataCo Smart Supply Chain - Big Data & Machine Learning Analysis
+# 🚀 Prediksi Keterlambatan Pengiriman - FESMARO 2025 📦
 
-Tentang Proyek
+### **Tim PNJoy**
+- **Syifa Azzahirah** - 2207411024  
+- **Deva Alvyn Budinugraha** - 2207411050  
+- **Nabil Falih Khairullah** - 2107411060  
 
-Proyek ini dibuat untuk kompetisi FESMARO Big Data Analysis 2025, yang berfokus pada analisis dan prediksi keterlambatan pengiriman dalam rantai pasok menggunakan Machine Learning dan Data Science.
+📍 **Politeknik Negeri Jakarta**  
+📅 **Kompetisi: Analisis Big Data - FESMARO 2025**
 
-Tujuan Utama
+---
 
-Menganalisis faktor-faktor utama yang menyebabkan keterlambatan pengiriman.
-Membangun model Machine Learning untuk memprediksi kemungkinan keterlambatan pesanan.
-Memberikan insight bisnis untuk optimasi logistik dan rantai pasok berbasis data.
+## 📌 Deskripsi Proyek
+Dalam industri **Supply Chain Management**, keterlambatan pengiriman dapat menyebabkan **penurunan kepuasan pelanggan dan peningkatan biaya operasional**. Oleh karena itu, proyek ini bertujuan untuk **memprediksi keterlambatan pengiriman berdasarkan data historis transaksi** menggunakan **Machine Learning (Random Forest & XGBoost).**  
 
+### 🔍 Fokus Analisis
+✅ **Mengidentifikasi faktor utama** yang mempengaruhi keterlambatan pengiriman.  
+✅ **Membangun model prediksi keterlambatan** dengan Machine Learning.  
+✅ **Menganalisis performa model** dengan berbagai metrik evaluasi.  
 
-Dataset yang Digunakan
+---
 
-DataCoSupplyChainDataset.csv - Berisi data utama rantai pasok.
-DescriptionDataCoSupplyChain.csv - Deskripsi elemen dalam dataset.
-tokenized_access_logs.csv - Data logistik yang ditokenisasi.
+## 📊 Dataset
+Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informasi transaksi dan logistik dengan lebih dari **180.000 transaksi**.  
+📄 **Sumber Data:** [DataCo Smart Supply Chain](https://www.kaggle.com/datasets)  
 
-Teknologi dan Tools
+**Fitur utama yang digunakan:**
+- **Tanggal Pemesanan & Pengiriman** 📅 (`order date`, `Days for shipping (real)`)
+- **Kategori Produk** 🏷️ (`Category Name`)
+- **Lokasi Pengiriman** 📍 (`Customer City`, `Order Region`)
+- **Mode Pengiriman** 🚚 (`Shipping Mode`)
 
-Python (Pandas, NumPy, Scikit-Learn, XGBoost, Seaborn, Matplotlib)
-Jupyter Notebook / Google Colab
-Machine Learning (Random Forest, Decision Tree, XGBoost, KNN, dan lainnya)
+---
 
-Hasil dan Evaluasi Model
+## 📖 Metodologi
+### 1️⃣ Data Preparation
+✔ **Menghapus missing values & duplikasi**  
+✔ **Encoding fitur kategorikal dengan One-Hot Encoding**  
+✔ **Normalisasi fitur numerik dengan StandardScaler**  
 
-Model akan dievaluasi menggunakan akurasi, log-loss, dan confusion matrix untuk klasifikasi.
-Jika prediksi numerik digunakan, akan dievaluasi dengan MAPE, RMSE, dan R-squared.
-Visualisasi dilakukan dengan heatmaps, feature importance, dan SHAP analysis untuk interpretasi model.
+### 2️⃣ Feature Engineering
+✔ **Membuat fitur baru `Shipment_Delay`** sebagai selisih waktu pengiriman real vs jadwal.  
+✔ **Ekstraksi fitur waktu (Order Year, Month, Day) untuk analisis pola musiman.**  
 
-Anggota Tim
+### 3️⃣ Model Training & Evaluation
+🔹 **Model yang digunakan:**
+- **Random Forest** 🌲  
+- **XGBoost** 🚀  
 
-Syifa Azzahirah
-Deva Alvyn Budinugraha
-Nabil Falih Khairullah
-Status Proyek: Sedang Berjalan
+🔹 **Metrik Evaluasi:**
+📌 **Accuracy, Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve.**  
+
+---
+
+## 📊 Hasil Evaluasi
+| Model          | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
+|---------------|----------|-----------|--------|----------|---------|
+| Random Forest | **76.05%** | 79%       | 76%    | 77%      | **0.84** |
+| XGBoost       | 71.71%   | 76%       | 74%    | 75%      | 0.81    |
+
+📢 **Kesimpulan:**  
+🎯 **Random Forest adalah model terbaik** dengan akurasi **76.05%** dan AUC **0.84**.  
+
+---
+
+## 📌 Cara Menjalankan Kode
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/Seismiks/Fesmaro-DataCo.git
+cd Fesmaro-DataCo
+```
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Jalankan Notebook di Google Colab
+- **Link Google Colab:** [Klik di sini](https://colab.research.google.com/drive/1BmgbY87BSnczjrPju67ZqWENbD7sw2za#scrollTo=rRl3aGqcuxJZ)
+- **Jalankan semua cell** untuk preprocessing, training, dan evaluasi model.
+
+---
+
+## 📌 Struktur Repository
+```
+📂 FESMARO_2025_Supply_Chain_Prediction
+│── 📜 README.md          <- Dokumentasi proyek ini
+│── 📂 src                <- Kode sumber (Preprocessing & Training Model)
+│── 📂 data               <- Dataset yang digunakan
+│── 📂 reports            <- Laporan PDF & hasil analisis
+│── 📂 notebooks          <- Jupyter Notebook / Google Colab eksperimen
+│── 📂 models             <- Model yang sudah dilatih (Saved Models)
+```
+
+---
+
+## 🔗 Link Pengumpulan
+📌 **GitHub Repository:** [https://github.com/Seismiks/Fesmaro-DataCo](https://github.com/Seismiks/Fesmaro-DataCo)  
+📌 **Google Colab Notebook:** [https://colab.research.google.com/drive/1BmgbY87BSnczjrPju67ZqWENbD7sw2za#scrollTo=rRl3aGqcuxJZ](https://colab.research.google.com/drive/1BmgbY87BSnczjrPju67ZqWENbD7sw2za#scrollTo=rRl3aGqcuxJZ)  
+
+---
+
+## 💡 Rekomendasi Pengembangan
+🚀 **Tingkatkan akurasi model** dengan Hyperparameter Tuning (GridSearchCV).  
+🚀 **Tambahkan faktor eksternal** (cuaca, lalu lintas, hari libur) untuk model lebih akurat.  
+🚀 **Integrasikan model ini ke dalam dashboard** untuk mempermudah pemantauan pengiriman.  
+
+---
+
+## 📞 Kontak
+Jika ada pertanyaan atau diskusi lebih lanjut, silakan hubungi kami melalui:  
+📩 **Email:** timpnjoy@fesmaro.com  
+📢 **GitHub Issues:** [Buka Tiket](https://github.com/Seismiks/Fesmaro-DataCo/issues)  
+
+---
+
+🎯 **Tim PNJoy - Politeknik Negeri Jakarta**  
+🏆 **FESMARO 2025 - Analisis Big Data**  
+
+🔥 **Ayo tingkatkan efisiensi rantai pasok dengan Machine Learning!** 🚀  
+
+---
+
+📌 **Catatan:**  
+- **Pastikan repository GitHub bersifat PUBLIC agar bisa diakses panitia.**  
+
+🚀 **README.md ini siap diunggah ke GitHub!** 🚀

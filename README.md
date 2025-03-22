@@ -33,9 +33,9 @@ Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informas
 
 ## 📖 Metodologi
 ### 1️⃣ Data Preparation
-✔ **Menghapus missing values & duplikasi**  
-✔ **Encoding fitur kategorikal dengan One-Hot Encoding**  
-✔ **Normalisasi fitur numerik dengan StandardScaler**  
+✔ **Menghapus missing values & duplikasi**.
+✔ **Encoding fitur kategorikal dengan One-Hot Encoding**.
+✔ **Normalisasi fitur numerik dengan StandardScaler**.
 
 ### 2️⃣ Feature Engineering
 ✔ **Membuat fitur baru `Shipment_Delay`** sebagai selisih waktu pengiriman real vs jadwal.  

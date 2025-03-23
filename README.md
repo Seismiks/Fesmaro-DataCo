@@ -39,7 +39,7 @@ Dataset yang digunakan adalah **DataCo Smart Supply Chain** yang berisi informas
 
 ### 2️⃣ Feature Engineering
 ✔ **Membuat fitur baru `Shipment_Delay`** sebagai selisih waktu pengiriman real vs jadwal.  
-✔ **Ekstraksi fitur waktu (Order Year, Month, Day) untuk analisis pola musiman.**  
+✔ **Ekstraksi fitur waktu (Order Year, Month, Day) untuk analisis pola musiman**.  
 
 ### 3️⃣ Model Training & Evaluation
 🔹 **Model yang digunakan:**
